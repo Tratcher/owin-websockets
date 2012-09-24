@@ -5,6 +5,17 @@ using System.Collections.Generic;
 
 namespace Owin.WebSockets
 {
+    using WebSocketAccept =
+        Action
+        <
+            IDictionary<string, object>, // WebSocket Accept parameters
+            Func // WebSocketFunc callback
+            <
+                IDictionary<string, object>, // WebSocket environment
+                Task // Complete
+            >
+        >;
+
     using WebSocketFunc =
         Func
         <
