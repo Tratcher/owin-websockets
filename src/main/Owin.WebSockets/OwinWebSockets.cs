@@ -44,9 +44,7 @@ namespace Owin.WebSockets
                 <
                     int /* messageType */,
                     bool /* endOfMessage */,
-                    int? /* count */,
-                    int? /* closeStatus */,
-                    string /* closeStatusDescription */
+                    int /* count */
                 >
             >
         >;
@@ -56,9 +54,7 @@ namespace Owin.WebSockets
         <
             int /* messageType */,
             bool /* endOfMessage */,
-            int? /* count */,
-            int? /* closeStatus */,
-            string /* closeStatusDescription */
+            int /* count */
         >;
 
     using WebSocketCloseAsync =
